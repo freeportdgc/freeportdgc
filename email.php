@@ -7,12 +7,12 @@ if (isset($_POST['submit'])) {
     $interest = $_POST['interest'];
     $message = $_POST['message'];
 
-    $club_email = "freeportdgc@zohomail.com";
-    $header = "From: ".$email;
-    $txt = "You have received an email from ".$fullname."\n\n".$message;
+    $clubEmail = "freeportdgc@zohomail.com";
+    $headers = "From: ".$email;
+    $txt = "You have received an email from ".$name."\n\n".$message;
 
-    mail($club_email, $interest, $txt, $header);
-    header("Location: email.php?mailsend");
+    mail($clubEmail, $interest, $txt, $headers);
+    header("Location: contact.html?mailsend");
 
 
 }
