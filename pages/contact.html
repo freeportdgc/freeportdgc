@@ -38,19 +38,16 @@
             <h1>Fill out the form below, and we will respond as soon as possible.</h1>
             <p>All fields required</p>
 
-            <form action="https://formsubmit.co/freeportdgc@zohomail.com" method="POST" />
+            <form action="https://formsubmit.co/24b1ffb8619e701d4ba11031310357de" method="POST" />
                 
                 <div>
                     <label for="fullname">Name</label>
                     <input type="text" id="fullname" name="name" required>
                 </div>
 
-                <!--This line is to capture bot scrapers. If something is entered into this hidden box, the email is ignored-->
-                <input type="text" name="_honey" style="display:none">
-
                 <div>
                     <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email" placeholder="Emai address" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
                 </div>
 
                 <div>
@@ -73,6 +70,11 @@
                 <div>
                     <input type="submit" value="Send">
                 </div>
+
+                <!--This line is to capture bot scrapers. If something is entered into this hidden box, the email is ignored-->
+                <input type="text" name="_honey" style="display:none">
+                <!--This line pushes the user to a different page after submitting the form-->
+                <input type="hidden" name="_next" value="https://freeportdgc.com/index.html">
             </form>
 
 
