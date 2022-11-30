@@ -38,17 +38,19 @@
             <h1>Fill out the form below, and we will respond as soon as possible.</h1>
             <p>All fields required</p>
 
-            <form action="email.php" method="post">
+            <form action="https://formsubmit.co/freeportdgc@zohomail.com" method="POST" />
                 
                 <div>
                     <label for="fullname">Name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Your Name" required>
+                    <input type="text" id="fullname" name="name" required>
                 </div>
 
+                <!--This line is to capture bot scrapers. If something is entered into this hidden box, the email is ignored-->
+                <input type="text" name="_honey" style="display:none">
 
                 <div>
                     <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="email" name="email" id="email" placeholder="Emai address" required>
                 </div>
 
                 <div>
