@@ -6,6 +6,7 @@
     margin: 0;
 }
 
+
 header {
     background-color: #1A145F;
     color: #D9D9D9;
@@ -175,6 +176,11 @@ footer p {
 
 .social-icons {
     margin: .75em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 836px) {
