@@ -1,14 +1,18 @@
 <?php
 
+if (isset($_POST['submit'])) {
+
     $name = $_POST['fullname'];
     $email = $_POST['email'];
     $interest = $_POST['interest'];
     $message = $_POST['message'];
 
-$header = "From: ".$name."<".$email.">\r\n";
+    $club_email = "freeportdgc@zohomail.com";
+    $header = "From: ".$email;
+    $txt = "You have received an email from ".$fullname."\n\n".$message;
 
-$club_email = "freeportdgc@zohomail.com";
+    mail($club_email, $interest, $txt, $header);
+    header("Location: email.php?mailsend");
 
-mail($club_email, $interest, $message, $header)
-or die("Sorry, there was an error.");
-?>
+
+}
