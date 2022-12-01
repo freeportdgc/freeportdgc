@@ -40,41 +40,43 @@
 
             <form action="https://formsubmit.co/24b1ffb8619e701d4ba11031310357de" method="POST" />
                 
-                <div>
-                    <label for="fullname">Name</label>
-                    <input type="text" id="fullname" name="name" required>
+                <div class="container">
+                    <div>
+                        <label for="fullname">Name</label>
+                        <input type="text" id="fullname" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div>
+                        <label for="interest">What are you interested in?</label>
+                        <select name="interest" id="interest" required>
+                            <option value=""></option>
+                            <option value="member">Becoming a club member</option>
+                            <option value="sponsor">Club Sponsorship</option>
+                            <option value="course">Course Questions or Suggestions</option>
+                            <option value="other">Other Inquiries</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message">Type your message here.</label>
+                        <textarea name="message" id="message" placeholder="Type your message." required></textarea>
+                    </div>
+
+
+                    <div>
+                        <input type="submit" value="Send" class="send-contact-form">
+                    </div>
+
+                    <!--This line is to capture bot scrapers. If something is entered into this hidden box, the email is ignored-->
+                    <input type="text" name="_honey" style="display:none">
+                    <!--This line pushes the user to a different page after submitting the form-->
+                    <input type="hidden" name="_next" value="https://freeportdgc.com/index.html">
                 </div>
-
-                <div>
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                </div>
-
-                <div>
-                    <label for="interest">What are you interested in?</label>
-                    <select name="interest" id="interest" required>
-                        <option value=""></option>
-                        <option value="member">Become a club member</option>
-                        <option value="sponsor">Club Sponsorship</option>
-                        <option value="course">Course Questions or Suggestions</option>
-                        <option value="other">Other Inquiries</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="message">Type your message here.</label>
-                    <textarea name="message" id="message" placeholder="Type your message." required></textarea>
-                </div>
-
-
-                <div>
-                    <input type="submit" value="Send">
-                </div>
-
-                <!--This line is to capture bot scrapers. If something is entered into this hidden box, the email is ignored-->
-                <input type="text" name="_honey" style="display:none">
-                <!--This line pushes the user to a different page after submitting the form-->
-                <input type="hidden" name="_next" value="https://freeportdgc.com/index.html">
             </form>
 
 
