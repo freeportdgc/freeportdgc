@@ -82,8 +82,14 @@ footer {
     padding: 0.5em 0;
 }
 
-footer p {
-    padding-top: .6em;
+footer p:nth-child(2) {
+    margin-bottom: 0.5em;
+    margin-top: .25em;
+}
+
+.footer-alt {
+    background: #1A145F;
+    color: whitesmoke;
 }
 
 .socials-container {
@@ -94,7 +100,6 @@ footer p {
 .social-icons {
     margin: .75em;
 }
-
 
 
 
@@ -229,16 +234,55 @@ textarea {
     margin-top: 0.75em;
     padding: .65em 0;
     font-size: 1.1rem;
-    background-color: #595f14;
-    font-weight: 600;
+    background-color: #BDCA2B;
+    font-weight: 700;
     letter-spacing: .15em;
     border: none;   
-    color: whitesmoke;
+    color: #1A145F;
 }
 
 .send-contact-form:hover,
 .send-contact-form:active {
     background-color: #5f1459;
+}
+
+/* courses.html */
+
+.courses-header {
+    padding: .25em 0 .25em .25em;
+    font-size: 2.5rem;
+    color: #1A145F;
+}
+
+.container-wrapper {
+    flex-direction: column;  
+    color: #1A145F;
+    padding: 0 .1em .25em .1em;
+}
+
+.krape,
+.highland {
+    margin: auto;
+    max-width: 90%;
+    margin: auto;
+}
+
+.krape p,
+.highland p {
+    line-height: 160%;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-top: .35em;
+}
+
+.course-pic {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    max-height: 250px;
+    background-size: cover;
+    margin-top: .25em;
+    border: 1px solid rgb(182, 182, 182);
 }
 
 
