@@ -35,12 +35,14 @@
         </header>
 
         <main class="contact">
-            <h1>Fill out the form below, and we will respond as soon as possible.</h1>
-            <p>All fields required</p>
+            <div class="instructions">
+                <h1>Fill out the form below, and we will respond as soon as possible.</h1>
+                <h2>All fields required</h2>
+            </div>
 
             <form action="https://formsubmit.co/24b1ffb8619e701d4ba11031310357de" method="POST" />
                 
-                <div class="container">
+                <div class="form-container">
                     <div>
                         <label for="fullname">Name</label>
                         <input type="text" id="fullname" name="name" placeholder="Enter your name" required>
@@ -69,7 +71,7 @@
 
 
                     <div>
-                        <input type="submit" value="Send" class="send-contact-form">
+                        <input type="submit" value="Send" class="send-contact-form-btn">
                     </div>
 
                     <!--This line is to capture bot scrapers. If something is entered into this hidden box, the email is ignored-->
@@ -86,13 +88,13 @@
 
         <footer>
             <p>Freeport Disc Golf Club</p>
-            <p>Freeport, IL</p>
+            <p class="city">Freeport, IL</p>
             <div class="socials-container">
                 <a class="social-icons" href="https://www.facebook.com/groups/144452502246839">
-                    <img src="/img/facebook-squared.svg" alt="Find us on Facebook">                    
+                    <img src="/img/fb-white.svg" alt="Find us on Facebook">                    
                 </a>
                 <a class="social-icons" href="mailto:freeportdgc@zohomail.com">
-                    <img src="/img/email-blue.svg" alt="Send us an email">
+                    <img src="/img/email-white.svg" alt="Send us an email">
                 </a>
             </div>
         </footer>
