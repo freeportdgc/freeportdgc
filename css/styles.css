@@ -112,13 +112,9 @@ footer {
     background-size: cover;
 }
 
-.recent-news {
-    padding-bottom: 1.25em;
-}
-
 .news-header{
     text-align: center;
-    margin: 0.5em 0;
+    margin: .75em 0 .5em 0;
     color: #2c3b94;
     font-size: 2.5rem;
 }
@@ -128,7 +124,7 @@ footer {
     margin: auto;
     text-align: center;
     flex-direction: column;
-    width: 75%;
+    width: 80%;
 }
 
 .headline {
@@ -244,7 +240,6 @@ textarea {
 }
 
 
-
 /* courses.html */
 
 .courses-header {
@@ -289,7 +284,6 @@ textarea {
     object-fit: fill;
     margin: .5em 0;
 }
-
 
 /*Media queries*/
 
@@ -345,7 +339,7 @@ textarea {
     }
 
     .headline {
-        padding-top: .75em;
+        margin: 1em 0;
     }
 
     .news-writeup {
