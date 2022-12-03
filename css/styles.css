@@ -63,7 +63,7 @@ body {
 
 .flex {
     display: flex;
-    gap: 2rem;
+    gap: 2em;
 }
 
 .sr-only {
@@ -91,10 +91,6 @@ footer {
 
 .social-icons {
     margin: .75em;
-}
-
-.emphasis {
-    font-weight: 700;
 }
 
 /*For index.html*/
@@ -302,6 +298,7 @@ aside h2 {
     width: 90%;
     margin: auto;
     gap: 1em;
+    background-color: red;
 }
 
 .krape-header,
