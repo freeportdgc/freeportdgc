@@ -298,7 +298,6 @@ aside h2 {
     width: 90%;
     margin: auto;
     gap: 1em;
-    background-color: red;
 }
 
 .krape-header,
@@ -319,6 +318,7 @@ aside h2 {
 .course-map {
     margin: 0 auto 1.5em auto;
     display: block;
+    max-width: 100%;
 }
 
 .course-location-description {
