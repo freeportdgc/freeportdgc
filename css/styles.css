@@ -91,6 +91,7 @@ footer {
 
 .social-icons {
     margin: .75em;
+    text-decoration: none;
 }
 
 /*For index.html*/
@@ -329,14 +330,14 @@ aside h2 {
 
 /* new.html  */
 
-.new-wrapper {
+.wrapper {
     width: 90%;
     margin: auto;
 }
 
-.new-wrapper section,
-.new-wrapper-subheader,
-.new-wrapper-h3,
+.wrapper section,
+.wrapper-subheader,
+.wrapper-h3,
 #disc-golf-media ul,
 #disc-golf-media li{
     margin: 0.75em 0;
@@ -361,7 +362,24 @@ aside h2 {
     margin-top: .75em;
 }
 
+/* dginnwil.html */
 
+.area-dg-intro p {
+    margin-top: 1em;
+}
+
+.list{
+    margin: 1em 0 .75em 0;
+}
+
+.list li {
+    margin: .5em 0;
+}
+
+.where-to-play p,
+.area-clubs p {
+    margin-top: 1em;
+}
 
 /*Media queries*/
 
@@ -461,6 +479,10 @@ aside h2 {
         display: inline-block;
     }
 
+    .course-name a {
+        color: #2c3b94;
+    }
+
     .course-pic {
         margin-bottom: .75em;
     }
@@ -503,15 +525,22 @@ aside h2 {
 
     /* new.html */
 
-    .new-wrapper {
-        max-width: 1200px;
+    .wrapper {
+        max-width: 1100px;
+        margin-bottom: 1em;
     }
 
-    #new-to-sport {
-        margin-top: 2em;
+    #new-to-sport,
+    .area-dg-intro h1 {
+        margin-top: 1.75em;
     }
 
+    .area-dg-intro h1 {
+        font-size: 2rem;
+    }
 
-
+    .dginil {
+        font-size: 1.1rem;
+    }
 
 }
