@@ -109,7 +109,7 @@ footer {
 .main-image {
     width: 100%;
     height: auto;
-    opacity: 0.5;
+    opacity: 0.6;
     max-height: 250px;
     background-size: cover;
 }
@@ -282,7 +282,8 @@ textarea {
     width: 100%;
     height: auto;
     opacity: 0.9;
-    max-height: 250px;
+    max-height: 300px;
+    max-width: 600px;
     object-fit: fill;
     margin: .5em 0;
 }
