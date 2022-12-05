@@ -391,6 +391,26 @@ aside h2 {
     margin: 0.75em 0;
 }
 
+/* 404-not-found.html */
+
+.oops-404 {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.oops-404 img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    max-width: 700px;
+}
+
+.oops-404 h2,
+.oops-404 p {
+    margin: .75em 0;
+}
+
 /*Media queries*/
 
 /* For Smaller Screens*/
