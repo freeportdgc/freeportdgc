@@ -331,7 +331,8 @@ aside h2 {
 
 /* new.html  */
 
-.wrapper {
+.wrapper,
+.about-wrapper {
     width: 90%;
     margin: auto;
 }
@@ -380,6 +381,14 @@ aside h2 {
 .where-to-play p,
 .area-clubs p {
     margin-top: 1em;
+}
+
+/* about.html */
+
+.about-wrapper section h2,
+.about-wrapper section p,
+.about-wrapper section ul li {
+    margin: 0.75em 0;
 }
 
 /*Media queries*/
