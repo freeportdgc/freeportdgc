@@ -171,9 +171,9 @@ story a{
 }
 
 .story a:hover,
-.story a:active,
+.story a:focus-visible,
 .contact-us a:hover,
-.contact-us a:active {
+.contact-us a:focus-visible {
     color: #595f14;
 }
 
@@ -391,24 +391,23 @@ aside h2 {
     margin: 0.75em 0;
 }
 
-/* 404-not-found.html */
-
-.oops-404 {
-    text-align: center;
-    margin: 1em 0;
+.calendar {
+    margin: 1em auto;
+    display: inline;
+    background-color: red;
 }
 
-.oops-404 img {
-    display: block;
-    margin: auto;
-    width: 80%;
-    height: auto;
-    max-width: 700px;
+.calendar iframe {
+    display: block;  
+    margin: 1em auto;
+    max-width: 90%;
+
 }
 
-.oops-404 h2,
-.oops-404 p {
-    margin: .75em 0;
+.large-calendar {
+    display: none;
+    height: 0;
+    width: 0;
 }
 
 /*Media queries*/
@@ -571,6 +570,16 @@ aside h2 {
 
     .dginil {
         font-size: 1.1rem;
+    }
+
+    .small-calendar {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    .large-calendar {
+        display: contents;
     }
 
 }
