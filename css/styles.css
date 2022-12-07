@@ -8,20 +8,14 @@
     margin: 0;
 }
 
-
-header {
-    background-color: #2c3b94;
-    justify-content: space-around;
-    padding: .1em 1em;
-}
+/* Navigation related */
 
 nav {
     align-self: center;
     font-size: 1.1rem;
-}
-
-body {
-    color: #2c3b94;
+    background-color: #2c3b94;
+    justify-content: space-between;
+    padding: 0 2em;
 }
 
 .primary-navigation a:hover,
@@ -61,38 +55,57 @@ li {
     display: none;
 }
 
-.flex {
-    display: flex;
-    gap: 2em;
-}
-
 .sr-only {
     visibility: hidden;
 }
+
+body {
+    line-height: 1.75;
+    font-size: 1.15rem;
+}
+
+main,
+article {
+    color: #2c3b94;
+}
+
+/* Footer Related */
 
 footer {
     text-align: center;
     padding: 1.75em 0 1em 0;
     position: absolute;
     width: 100%;
-    background: #2c3b94;
+    background-color: #2c3b94;
     color: whitesmoke;
 }
 
 .city {
-    margin-bottom: 0.5em;
-    margin-top: .25em;
-}
-
-.socials-container {
-    color: #2c3b94;
-    margin-top: 1em;
+    margin: .5em auto 0.75em;
 }
 
 .social-icons {
-    margin: .75em;
+    margin: .5em;
     text-decoration: none;
 }
+
+/* Utility Classes */
+
+.flex {
+    display: flex;
+    gap: 1.5em;
+}
+
+.link-color {
+    color: #719cee
+}
+
+.link-color-hover:hover,
+.link-color-hover:focus {
+    color: #5f1459;
+}
+
+
 
 /*For index.html*/
 
@@ -111,70 +124,46 @@ footer {
     height: auto;
     opacity: 0.6;
     max-height: 250px;
-    background-size: cover;
+    object-fit: cover;
+    object-position: center 33%;
+
 }
 
 .news-header{
     text-align: center;
-    margin: .75em 0 .5em 0;
-    color: #2c3b94;
+    margin: .75em auto;
     font-size: 2.5rem;
 }
 
 .news-stories{
-    color: #2c3b94;
     margin: auto;
     text-align: center;
     flex-direction: column;
     width: 80%;
-}
-
-.headline {
-    margin-bottom: .5em;   
+    max-width: 1400px;
 }
 
 .news-writeup{
-    line-height: 1.5rem;
-    letter-spacing: .1rem;  
-}
-
-story a{
-    color: #2c3b94;
+    margin-top: .75em;
 }
 
 .contact-us {
-    padding: .5em 0;
     text-align: center;
-    font-size: 1.15rem;
 }
 
 .become-member {
     font-size: 2rem;
     padding: 0.5em 0;
-    color: #2c3b94;
-}
-
-.contact-us {
-    margin: auto;
 }
 
 .call-to-action {
-    max-width: 90%;
-    margin: auto;
-    color: #2c3b94;
+    width: 80%;
+    margin: .5em auto 0;
 }
 
 .contact-us a {
-    color: #2c3b94;
     display: inline-block;
     margin: 1em 0 0.5em 0;
-}
-
-.story a:hover,
-.story a:focus-visible,
-.contact-us a:hover,
-.contact-us a:focus-visible {
-    color: #595f14;
 }
 
 
@@ -230,7 +219,6 @@ textarea {
     font-size: 1.25rem;
     background-color: #2c3b94;
     font-weight: 500;
-    letter-spacing: .15em;
     border: none;   
     color: whitesmoke;
 }
@@ -245,47 +233,24 @@ textarea {
 /* courses.html */
 
 .courses-header {
-    padding: .25em 0 .25em .5em;
     font-size: 2.5rem;
-    color: #2c3b94;
-}
-
-.course-links {
-    color: #2c3b94;
-}
-
-.course-links:hover,
-.course-links:focus {
-    color: #5f1459;
+    margin: 0.25em auto;
+    width: 90%;
 }
 
 .container-wrapper {
-    flex-direction: column;  
-    color: #2c3b94;
-    padding: 0 .1em 1em .1em;
+    flex-direction: column;
     width: 90%;
-    margin: auto;
-}
-
-.course-description {
-    line-height: 200%;
-    font-size: 1.15rem;
-    letter-spacing: 1.25px;
-    margin: 1em 0;
-}
-
-.course-name {
-    margin-bottom: .5em;
+    margin: 0 auto 0.75em;
 }
 
 .course-pic {
     width: 100%;
     height: auto;
     opacity: 0.9;
-    max-height: 300px;
-    max-width: 600px;
-    object-fit: fill;
-    margin: .5em 0;
+    object-fit: cover;
+    display: block;
+    margin: 1em auto;
 }
 
 /* krape.html and highland.html  */
@@ -297,24 +262,18 @@ aside h2 {
 .course-wrapper {
     flex-direction: column;
     text-align: justify;
-    width: 90%;
+    width: 80%;
     margin: auto;
-    gap: 1em;
 }
 
-.krape-header,
-.krape-subheader {
-    margin-top: .35em;
-    text-align: center;
+.course-wrapper p {
+    margin: 1em 0;
 }
 
 .krape-header {
-    font-size: 3.5rem;
-}
-
-.krape-subheader {
-    font-size: 1.75rem;
-    margin-bottom: .25em;
+    font-size: 2.5rem;
+    margin-top: .35em;
+    text-align: center;
 }
 
 .course-map {
@@ -324,8 +283,6 @@ aside h2 {
 }
 
 .course-location-description {
-    line-height: 200%;
-
     margin: 1em 0;
 }
 
@@ -342,22 +299,21 @@ aside h2 {
 .wrapper-h3,
 #disc-golf-media ul,
 #disc-golf-media li{
-    margin: 0.75em 0;
-    line-height: 200%;
+    margin: 0.75em 0;;
 }
 
 #new-to-sport {
     margin: 0.75em 0 0.75em 0;
 }
 
-
 #golfers-code img {
     width: 90%;
     height: auto;
     display: block;
     margin: 1em auto 1.5em auto;
+    object-fit: contain;
     max-width: 670px;
-    max-height: 900px;
+    max-height: 700px;
 }
 
 #competition-manual p:nth-of-type(2) {
@@ -391,17 +347,20 @@ aside h2 {
     margin: 0.75em 0;
 }
 
+
+#about-last-paragraph {
+    margin-bottom: 2em;
+}
+
 .calendar {
-    margin: 1em auto;
+    margin: auto;
     display: inline;
-    background-color: red;
 }
 
 .calendar iframe {
     display: block;  
     margin: 1em auto;
     max-width: 90%;
-
 }
 
 .large-calendar {
@@ -415,6 +374,7 @@ aside h2 {
 /* For Smaller Screens*/
 
 @media (max-width: 836px) {
+    
     .primary-navigation {
         position: fixed;
         inset: 0 0 0 20%;
@@ -424,6 +384,13 @@ aside h2 {
         z-index: 1;
         transform: translateX(100%);
         transition: transform 250ms ease-out;
+
+    }
+
+    .logo {
+        padding-right: 1.5em;
+        margin: 0.75em 0;
+        z-index: 2;
     }
 
    .logo-top {
@@ -446,34 +413,38 @@ aside h2 {
         background-image: url("/img/square.png");
         background-repeat: no-repeat;
         width: 2rem;
-        top: .5rem;
+        top: .75rem;
         aspect-ratio: 1 / 1;
         right: 1rem;
         z-index: 2;
         border: 0;
-        padding-left: 1em;
+
     }
 }
 
 /* Larger Screens*/
 
 @media (min-width: 837px) {
-      
+    
+    .primary-navigation {
+        align-items: center;
+    }
+
+    .contact-us {
+        margin: 2em 0 1em 0;
+    }
+
+
     /*index.html*/
 
     .news-stories {
         flex-direction: row;
-        gap: 4em;
+        gap: 3em;
         width: 90%;
-    }
-
-    .headline {
-        margin: 1em 0;
     }
 
     .news-writeup {
         text-align: justify;
-        line-height: 2em;
     }
 
     /*contact.html*/
@@ -491,38 +462,22 @@ aside h2 {
 
     .courses-header {
         text-align: center;
-        padding: 0.5em 0;
+        margin-top: 0.5em;
     }
 
     .container-wrapper {
         max-width: 1200px;
-        width: 90%;
         flex-direction: row;
-        margin: auto;
-        gap: 4em;
-        margin-bottom: 2em;
-    }
-
-    .course-name {
-        margin-bottom: .75em;
-        display: inline-block;
-    }
-
-    .course-name a {
-        color: #2c3b94;
-    }
-
-    .course-pic {
-        margin-bottom: .75em;
+        margin: 0 auto;
+        gap: 6em;
     }
 
     .course-preview {
-        width: 95%;
+        width: 100%;
     }
 
-    /* ****** If time, find where this margin is being added! ***** */
-    .highland {
-        margin: 0;
+    .course-preview img {
+        height: 50%;
     }
 
     /** krape.html and highland.html **/
@@ -534,8 +489,7 @@ aside h2 {
         max-width: 1400px;
     }
 
-    .krape-header,
-    .krape-subheader {
+    .krape-header {
         text-align: left;
     }
 
@@ -569,6 +523,11 @@ aside h2 {
     }
 
     .dginil {
+        font-size: 1.1rem;
+    }
+
+    .about-wrapper {
+        max-width: 60%;
         font-size: 1.1rem;
     }
 
