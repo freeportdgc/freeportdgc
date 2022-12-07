@@ -149,6 +149,8 @@ footer {
 
 .contact-us {
     text-align: center;
+    background-color: #2c3b94;
+    color: whitesmoke;
 }
 
 .become-member {
@@ -164,6 +166,17 @@ footer {
 .contact-us a {
     display: inline-block;
     margin: 1em 0 0.5em 0;
+    color: whitesmoke;
+}
+
+.upcoming-events-index {
+    color: #2c3b94;
+    margin: 1em auto 0 auto;
+    width: 80%;
+}
+
+.calender-index {
+    text-align: center;
 }
 
 
@@ -349,7 +362,7 @@ aside h2 {
 
 
 #about-last-paragraph {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .calendar {
@@ -445,6 +458,10 @@ aside h2 {
 
     .news-writeup {
         text-align: justify;
+    }
+
+    .calendar-index {
+        text-align: left;
     }
 
     /*contact.html*/
