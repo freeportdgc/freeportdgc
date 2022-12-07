@@ -17,4 +17,4 @@ hamburgerToggle.addEventListener('click', () => {
 
 // This adds an alert to the top of the home screen. To display, erase the two slashes in front of the line below. To hide, put two slashes back
 
-//document.getElementById("alert").style.display = "block"
+document.getElementById("alert").style.display = "block"
